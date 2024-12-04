@@ -9,7 +9,13 @@ app.use(express.json());
 
 connectDB();
 
-app.use(cors());
+app.use(cors(
+  {
+    origin: [],
+    methods: ["POST", "GET"],
+    credentials: true,
+  }
+));
 app.use("/", Routes);
 
 const PORT = process.env.PORT || 5000;
