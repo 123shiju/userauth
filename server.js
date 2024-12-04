@@ -11,7 +11,7 @@ connectDB();
 
 app.use(cors(
   {
-    origin: ["https://userauthclient.vercel.app/"],
+    origin: ["https://userauthclient.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true,
   }
